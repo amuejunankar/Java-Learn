@@ -58,8 +58,23 @@ public class arrayinjava {
         //     System.out.println();            
         // } 
 
+        // Printing in new format
+
+        for(int row=0; row < arr.length; row++ ) { 
+            System.out.println(Arrays.toString(arr[row]));  
+                     
+        } 
+        // 
+        // Enhanced For loop
+
+        for(int[] array : arr) {
+            System.out.println(Arrays.toString(array));
+        }
+
+
         //-------------------------------------------
         // ? Dynamic Array
+
         
         //-------------------------------------------
 
