@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -38,7 +39,7 @@ public class arrayinjava {
         //     System.out.print(i);
         // }
 
-        //-------------------------------------------
+        // ******************************************
      
         // ? 2D - Array 
 
@@ -58,24 +59,33 @@ public class arrayinjava {
         //     System.out.println();            
         // } 
 
-        // Printing in new format
+        // ! Printing in new format **
 
-        for(int row=0; row < arr.length; row++ ) { 
-            System.out.println(Arrays.toString(arr[row]));  
+        // for(int row=0; row < arr.length; row++ ) { 
+        //     System.out.println(Arrays.toString(arr[row]));  
                      
-        } 
-        // 
-        // Enhanced For loop
+        // } 
+         
+        // ! Enhanced For loop **
 
-        for(int[] array : arr) {
-            System.out.println(Arrays.toString(array));
-        }
+        // for(int[] array : arr) {
+        //     System.out.println(Arrays.toString(array));
+        // }
 
 
         //-------------------------------------------
         // ? Dynamic Array
 
+            ArrayList<Integer> list = new ArrayList<>();
+            
+            
+            
         
+        //-------------------------------------------
+
+        //-------------------------------------------
+    
+
         //-------------------------------------------
 
 
