@@ -41,22 +41,31 @@ public class arrayinjava {
         //-------------------------------------------
      
         // ? 2D - Array 
-        Scanner arrin = new Scanner(System.in);
-        int[][] arr = new int[3][3];
 
-        for(int row=0; row < arr.length; row++ ) { 
-            for(int col=0; col < arr[row].length ; col++ ) { 
-                arr[row][col] = arrin.nextInt();
-            }            
-        }
+        // Scanner arrin = new Scanner(System.in);
+        // int[][] arr = new int[3][3];
 
-        for(int row=0; row < arr.length; row++ ) { 
-            for(int col=0; col < arr[row].length ; col++ ) { 
-                System.out.print(" "+ arr[row][col]);
-            }            
-        } System.out.println("");
+        // for(int row=0; row < arr.length; row++ ) { 
+        //     for(int col=0; col < arr[row].length ; col++ ) { 
+        //         arr[row][col] = arrin.nextInt();
+        //     }            
+        // }
 
-        System.out.println("Git Push by git push command");
+        // for(int row=0; row < arr.length; row++ ) { 
+        //     for(int col=0; col < arr[row].length ; col++ ) { 
+        //         System.out.print(+ arr[row][col]+" ");
+        //     }
+        //     System.out.println();            
+        // } 
+
+        //-------------------------------------------
+        // ? Dynamic Array
+        
+        //-------------------------------------------
+
+
+
+
     }
 }
 
