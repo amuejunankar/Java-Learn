@@ -56,7 +56,7 @@ public class arrayinjava {
             }            
         } System.out.println("");
 
-
+        System.out.println("Git Push by git push command");
     }
 }
 
