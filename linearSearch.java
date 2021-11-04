@@ -21,7 +21,7 @@
 //                 return i;
 //             }
 //         }
-
+           // if target is not Found
 //         return -1;
 
 //     }
