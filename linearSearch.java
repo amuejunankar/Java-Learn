@@ -1,31 +1,31 @@
-// import javax.sound.sampled.ReverbType;
+import javax.sound.sampled.ReverbType;
 
-// public class linearSearch {
-//     public static void main(String[] args) {
+public class linearSearch {
+    public static void main(String[] args) {
         
-//         int[] nums = {12,14,15,665,44,4,444,20};
-//         int target = 100;
-//         int ans = LinearSearch(nums, target);
-//         System.out.println(ans);
+        int[] nums = {12,14,15,665,44,4,444,20};
+        int target = 100;
+        int ans = LinearSearch(nums, target);
+        System.out.println(ans);
 
-//     }
+    }
 
 
-//     static int LinearSearch(int[] arr, int target) {
-//         if (arr.length == 0) {
-//             return -1;
-//         }
+    static int LinearSearch(int[] arr, int target) {
+        if (arr.length == 0) {
+            return -1;
+        }
 
-//         for (int i = 0; i < arr.length ; i++) {
-//             if ( target == arr[i] ) {
-//                 return i;
-//             }
-//         }
-           // if target is not Found
-//         return -1;
+        for (int i = 0; i < arr.length ; i++) {
+            if ( target == arr[i] ) {
+                return i;
+            }
+        }
+           if target is not Found
+        return -1;
 
-//     }
-// }
+    }
+}
 
 
 // -----------------------------------------------------------
@@ -49,7 +49,7 @@ public class linearSearch {
                 }
             }
 
-            System.out.println(nums[i]);
+            System.out.print(nums[i]+ " ");
             
         }
     }
@@ -60,19 +60,19 @@ public class linearSearch {
 //------------------------------------------------------------
 // ? Sorting array using inbuilt function()
 
-// import java.util.Arrays;
-// import javax.sound.sampled.ReverbType;
+import java.util.Arrays;
+import javax.sound.sampled.ReverbType;
 
-// public class linearSearch {
-//     public static void main(String[] args) {
+public class linearSearch {
+    public static void main(String[] args) {
         
-//         int[] nums = {12,14,15,665,44,4,444,20};
-//         Arrays.sort(nums);
+        int[] nums = {12,14,15,665,44,4,444,20};
+        Arrays.sort(nums);
 
-//         for( int i = 0; i < nums.length ; i++) {
-//             System.out.print(nums[i]+" ");
-//         }
-//     }
-// }
+        for( int i = 0; i < nums.length ; i++) {
+            System.out.print(nums[i]+" ");
+        }
+    }
+}
 
 
