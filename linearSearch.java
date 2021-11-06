@@ -1,4 +1,8 @@
 import java.net.PortUnreachableException;
+import java.util.Arrays;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+import javax.swing.text.html.HTMLDocument.RunElement;
 
 // import javax.sound.sampled.ReverbType;
 
@@ -186,3 +190,62 @@ import java.net.PortUnreachableException;
 
 // ? Search In 2D Arrays
 
+// public class linearSearch {
+//     public static void main(String[] args) {
+//         int[][] arr = {
+//             {15,16,-22,-14,15},
+//             {66,22,14,4,-15},
+//             {4,15,-66,-22,4,15,-456}
+//         }; // end of 2d array
+
+//         int target = 4;
+//         int[] ans = search(arr,target); // format of return value {row, col}
+//         System.out.println(Arrays.toString(ans));
+//         System.out.println(max(arr));
+
+//     }
+
+//     static int[] search(int[][] arr, int target) {
+//         if ( arr.length == 0) {
+//             //return -1;
+//             return new int[]{-1,-1};
+//         }
+        
+//         for (int i =0; i < arr.length ; i++) {
+//             for (int j = 0; j < arr[i].length; j++) {
+//                 if ( arr[i][j] == target) {
+//                     return new int[]{i,j};     
+//                 }  
+//             }
+//         }
+//         // we are returning in array so new int[]
+//         return new int[]{-1,-1};
+//     }
+
+//     // function for minimum value
+
+//     static int max(int[][] arr) {
+//         int minimum = arr[0][0];
+
+//         for (int i =0; i < arr.length ; i++) {
+//             for (int j = 0; j < arr[i].length; j++) {
+//                 if ( arr[i][j] < minimum  ) {
+//                     minimum = arr[i][j];
+//                 }  
+//             }
+//         }
+//         return minimum;
+//     } // end of min Function
+
+// }
+
+
+// -------------------------------------------------------
+
+// ? 
+
+public class linearSearch {
+    public static void main(String[] args) {
+          
+    }
+}
