@@ -43,7 +43,7 @@ import javax.swing.text.html.HTMLDocument.RunElement;
 //     public static void main(String[] args) {
         
 //         int[] nums = {12,14,15,665,44,4,444,20};
-        
+
 
 //         for( int i = 0; i < nums.length ; i++) {
 //             for (int j=i+1; j < nums.length; j++) {
