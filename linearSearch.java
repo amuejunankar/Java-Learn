@@ -242,10 +242,88 @@ import javax.swing.text.html.HTMLDocument.RunElement;
 
 // -------------------------------------------------------
 
-// ? 
+// ? Even Digits 329 > odd 1224 > even 15547 > odd
+//   print how many nunmbers are even
+
+// public class linearSearch {
+//     public static void main(String[] args) {
+//         int[] nums = {12,345,2,6,7896};
+//         System.out.println(findNumbers(nums));
+//     }
+
+//     static int findNumbers(int[] nums) {
+//         int count = 0;
+//         for ( int i =0; i < nums.length; i++) {
+//             if (even(nums[i])) {
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+
+
+//     // function to check wheater num is even or not
+//     static boolean even(int num) {
+//         int numberOfdigits = digits(num);
+        
+//         if ( numberOfdigits % 2 ==0) {
+//             return true ;
+//         }
+//         return false;
+        
+//     }
+
+
+//      // count number of digits in a number
+//     static int digits(int num) {
+        
+//         // for negative value , convert to P+
+        
+//         if (num < 0) {
+//             num = num * -1;
+//         }
+        
+//         if (num == 0 ) {
+//             return 1;
+//         }
+        
+//         int count = 0;
+//         while (num > 0) {
+//             count++;
+//             num = num / 10;
+//         }
+        
+//         return count;
+//     }
+    
+// }
+
+//----------------------------------------------------
+// ? Maximum Wealth 
+// https://leetcode.com/problems/richest-customer-wealth/
 
 public class linearSearch {
     public static void main(String[] args) {
-          
+        int[][] accounts = {{1,2,3},{3,2,1}};
+        System.out.println(maximumWealth(accounts));
+        
+    }
+    public static int maximumWealth(int [][] accounts) {
+        // person = rol 
+        // account = col
+        int ans = Integer.MIN_VALUE;
+        for ( int person = 0; person < accounts.length; person++) {
+            int sum = 0; 
+            for ( int account  = 0 ; account < accounts[person].length ; account++ ) {
+                sum += accounts[person][account]; 
+            }
+
+            // we have sum of accounts of person
+            // check with oervall ans
+            if ( sum > ans) {
+                ans = sum;
+            }
+        }
+        return ans;
     }
 }
