@@ -23,7 +23,7 @@ public class OrderAgnosticBS {
          // !Simple way or in Short.
          // boolean isAscending = arr[start] > arr[end];
 
-
+         
          while(start <= end) {
             //  find the middle element
             
