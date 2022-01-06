@@ -1,8 +1,16 @@
+import java.util.Arrays;
+
 // Actually Using Binary Search Here.
 
 public class sorted_Matrix {
     public static void main(String[] args) {
-        
+        int[][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        int target = 7;
+        System.out.println(Arrays.toString(search(arr, target)));
     }
 
     // search in the row provided Betwn columns proviided.
@@ -38,7 +46,44 @@ public class sorted_Matrix {
 
         // run the loop till 2 rows are remaining
         while (rowStart < (rowEnd - 1)){ // while this is true, it'll have more than 2 rows
+            int mid = rowStart + (rowEnd - rowStart) / 2 ;
+            if (matrix[mid][colMid] == target) {
+                return new int[]{mid, colMid};
 
+            }
+            if (matrix[mid][colMid] < target) {
+                rowStart = mid;
+            } else {
+                rowEnd = mid;
+            }
+        }
+
+        // now we have 2 Rows Remaining.
+        // check wheather the target is in the col of 2 rows
+        if (matrix[rowStart][colMid] == target) {
+            return new int[]{rowStart, colMid};
+        }
+        // rowEnd going to be.
+        if (matrix[rowStart+1][colMid] == target) {
+            return new int[]{rowStart, colMid};
+        }
+
+        
+        // search in 1st half
+        if (target <= matrix[rowStart][colMid - 1]) {
+            return binarySearch(matrix, rowStart, 0, colMid-1, target);
+        }
+        // search in 2nd half
+        if (target >= matrix[rowStart][colMid + 1] && target <= matrix[rowStart][cols- 1]) {
+            return binarySearch(matrix, rowStart, colMid+1, cols-1, target);
+        }
+        // search in 3rd half
+        if (target <= matrix[rowStart + 1][colMid - 1]) {
+            return binarySearch(matrix, rowStart + 1, 0, colMid-1, target);
+        }    
+        // search in 4th half
+        else {
+            return binarySearch(matrix, rowStart+1, colMid+1, cols-1, target);
         }
     }
 }
