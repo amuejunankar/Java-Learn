@@ -1,12 +1,11 @@
 import java.util.Arrays;
 
-
 // Range must be  in //? 1 to N
 
 public class cyclicsort {
     public static void main(String[] args) {
         System.out.println("Cyclic Sort");
-        int[] arr = {3,5,2,1,4};
+        int[] arr = {3,2,1,4};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }   
